@@ -13,10 +13,6 @@ export const serviceContent = {
       "CPA review included",
       "QuickBooks/Xero included"
     ],
-    pricing: {
-      startingPrice: "Starting at $150/month",
-      description: "Flat-rate pricing with no hidden fees or contracts"
-    },
     whatIncluded: [
       "Dedicated bookkeeper assigned to your account",
       "Monthly bank reconciliations",
@@ -75,10 +71,6 @@ export const serviceContent = {
       "Revenue tracking",
       "CPA oversight"
     ],
-    pricing: {
-      startingPrice: "Starting at $150/month",
-      description: "Regular monthly service with consistent pricing"
-    },
     whatIncluded: [
       "Monthly bank and credit card reconciliations",
       "Transaction categorization and coding",
@@ -137,10 +129,6 @@ export const serviceContent = {
       "Tax preparation support",
       "Fast turnaround"
     ],
-    pricing: {
-      startingPrice: "Starting at $500",
-      description: "Project-based pricing depending on volume and complexity"
-    },
     whatIncluded: [
       "Complete transaction review and categorization",
       "Bank and credit card reconciliations for all periods",
@@ -199,10 +187,6 @@ export const serviceContent = {
       "QuickBooks training",
       "Integration support"
     ],
-    pricing: {
-      startingPrice: "Starting at $150/month",
-      description: "QuickBooks software included in pricing"
-    },
     whatIncluded: [
       "QuickBooks software license",
       "Initial setup and chart of accounts creation",
@@ -261,10 +245,6 @@ export const serviceContent = {
       "Chart of accounts restructuring",
       "Report customization"
     ],
-    pricing: {
-      startingPrice: "Starting at $500",
-      description: "Project-based pricing based on file complexity"
-    },
     whatIncluded: [
       "Complete QuickBooks file review and diagnosis",
       "Correction of data entry errors",
@@ -323,10 +303,6 @@ export const serviceContent = {
       "Scalable solution",
       "Competitive wholesale pricing"
     ],
-    pricing: {
-      startingPrice: "Starting at $75/client",
-      description: "Wholesale pricing for accounting firms and professionals"
-    },
     whatIncluded: [
       "Complete bookkeeping services under your brand",
       "Dedicated bookkeeping team",
@@ -385,10 +361,6 @@ export const serviceContent = {
       "Same-day support",
       "Community focus"
     ],
-    pricing: {
-      startingPrice: "Starting at $150/month",
-      description: "Local expertise at competitive rates"
-    },
     whatIncluded: [
       "Dedicated local bookkeeper",
       "Understanding of local business requirements",
@@ -447,10 +419,6 @@ export const serviceContent = {
       "CPA oversight included",
       "Scalable pricing model"
     ],
-    pricing: {
-      startingPrice: "Starting at $75/client",
-      description: "Wholesale pricing with volume discounts available"
-    },
     whatIncluded: [
       "Full bookkeeping services under your brand",
       "Custom branded reporting templates",
@@ -509,10 +477,6 @@ export const serviceContent = {
       "Scalable services",
       "Technology integration"
     ],
-    pricing: {
-      startingPrice: "Starting at $150/month",
-      description: "Comprehensive outsourced solution at fraction of in-house cost"
-    },
     whatIncluded: [
       "Complete bookkeeping department replacement",
       "Dedicated team of bookkeepers",
@@ -571,10 +535,6 @@ export const serviceContent = {
       "Quality assurance processes",
       "Flexible service levels"
     ],
-    pricing: {
-      startingPrice: "Starting at $150/month",
-      description: "Flexible pricing based on your specific outsourcing needs"
-    },
     whatIncluded: [
       "Complete bookkeeping process outsourcing",
       "Advanced bookkeeping technology platform",
@@ -633,10 +593,6 @@ export const serviceContent = {
       "Real-time access to books",
       "Professional review process"
     ],
-    pricing: {
-      startingPrice: "Starting at $200/month",
-      description: "Premium virtual service with CPA review included"
-    },
     whatIncluded: [
       "Complete virtual bookkeeping service",
       "Dedicated CPA review of all work",
@@ -695,10 +651,6 @@ export const serviceContent = {
       "Practice management integration",
       "Revenue cycle optimization"
     ],
-    pricing: {
-      startingPrice: "Starting at $250/month",
-      description: "Specialized pricing for healthcare practices"
-    },
     whatIncluded: [
       "Specialized healthcare bookkeeping",
       "Insurance billing and A/R management",
@@ -757,10 +709,6 @@ export const serviceContent = {
       "Sales tax compliance",
       "Cost of goods tracking"
     ],
-    pricing: {
-      startingPrice: "Starting at $200/month", 
-      description: "E-commerce specialized pricing with inventory tracking"
-    },
     whatIncluded: [
       "Multi-channel sales reconciliation",
       "Inventory tracking and valuation",
@@ -819,10 +767,6 @@ export const serviceContent = {
       "Legal compliance focus",
       "Time and billing optimization"
     ],
-    pricing: {
-      startingPrice: "Starting at $300/month",
-      description: "Specialized legal industry pricing with trust accounting"
-    },
     whatIncluded: [
       "Trust account management and reconciliation",
       "Client billing and accounts receivable",
@@ -881,10 +825,6 @@ export const serviceContent = {
       "Depreciation calculations",
       "Investor reporting"
     ],
-    pricing: {
-      startingPrice: "Starting at $200/month",
-      description: "Real estate specialized pricing with property tracking"
-    },
     whatIncluded: [
       "Property-by-property financial tracking",
       "Rental income and deposit management",
@@ -943,10 +883,6 @@ export const serviceContent = {
       "Compliance monitoring",
       "Board reporting"
     ],
-    pricing: {
-      startingPrice: "Starting at $200/month",
-      description: "Nonprofit specialized pricing with fund accounting"
-    },
     whatIncluded: [
       "Fund accounting and tracking",
       "Grant compliance and reporting",
@@ -1005,10 +941,6 @@ export const serviceContent = {
       "Franchise compliance",
       "Location profitability analysis"
     ],
-    pricing: {
-      startingPrice: "Starting at $200/month",
-      description: "Franchise specialized pricing with multi-location tracking"
-    },
     whatIncluded: [
       "Multi-location financial tracking",
       "Royalty fee calculations and tracking",
@@ -1067,10 +999,6 @@ export const serviceContent = {
       "Subcontractor tracking",
       "Union and prevailing wage compliance"
     ],
-    pricing: {
-      startingPrice: "Starting at $250/month",
-      description: "Construction specialized pricing with job costing"
-    },
     whatIncluded: [
       "Detailed job costing and tracking",
       "Progress billing and AIA forms",
@@ -1129,10 +1057,6 @@ export const serviceContent = {
       "Sales tax compliance",
       "Multi-location support"
     ],
-    pricing: {
-      startingPrice: "Starting at $200/month",
-      description: "Restaurant specialized pricing with food cost tracking"
-    },
     whatIncluded: [
       "Food and beverage cost tracking",
       "Labor cost management and optimization",
