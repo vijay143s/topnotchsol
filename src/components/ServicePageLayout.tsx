@@ -55,7 +55,7 @@ const ServicePageLayout = ({
               </Button>
               <Button variant="outline" size="lg">
                 <Phone className="w-4 h-4 mr-2" />
-                Call 1-800-583-0148
+                Call 1-800-555-0148
               </Button>
             </div>
           </div>
@@ -149,31 +149,6 @@ const ServicePageLayout = ({
         </div>
       </section>
 
-      {/* Pricing */}
-      {pricing && (
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h2 className="text-3xl font-bold text-foreground">
-                Simple, Transparent Pricing
-              </h2>
-              <Card className="border border-border/50 shadow-card">
-                <CardContent className="p-8 text-center space-y-4">
-                  <div className="text-4xl font-bold text-primary">
-                    {pricing.startingPrice}
-                  </div>
-                  <p className="text-lg text-muted-foreground">
-                    {pricing.description}
-                  </p>
-                  <Button variant="cta" size="lg">
-                    Get Started Today
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* FAQ */}
       <section className="py-20">
@@ -216,7 +191,7 @@ const ServicePageLayout = ({
               </Button>
               <Button variant="outline" size="lg">
                 <Phone className="w-4 h-4 mr-2" />
-                Call 1-800-583-0148
+                Call 1-800-555-0148
               </Button>
             </div>
           </div>
