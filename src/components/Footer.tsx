@@ -25,7 +25,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
                 <span className="text-accent-foreground font-bold text-xl">T</span>
               </div>
-              <span className="text-2xl font-bold">TopNotch Accounting</span>
+              <span className="text-2xl font-bold">TopNotch Accounting Services</span>
             </div>
             
             <p className="text-primary-foreground/80 leading-relaxed max-w-md">
@@ -37,15 +37,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-accent" />
-                <span className="text-sm">123 Business Center Dr, Suite 100, Your City, State 12345</span>
+                <span className="text-sm">456 Accounting Lane, Suite 200, Professional City, PC 54321</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent" />
-                <span className="text-sm">1-800-583-0148</span>
+                <span className="text-sm">1-800-555-0148</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent" />
-                <span className="text-sm">contact@topnotchaccounting.com</span>
+                <span className="text-sm">info@topnotchaccounting.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="w-5 h-5 text-accent" />
@@ -85,7 +85,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center lg:text-left">
               <p className="text-sm text-primary-foreground/60">
-                © {currentYear} TopNotch Accounting. All rights reserved.
+                © {currentYear} TopNotch Accounting Services. All rights reserved.
               </p>
               <p className="text-xs text-primary-foreground/50 mt-1">
                 TopNotch provides third-party bookkeeping services and is not affiliated with QuickBooks, Xero, or other software brands mentioned.

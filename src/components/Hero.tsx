@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-accounting.jpg";
+import heroImage from "@/assets/hero-bookkeeper.png";
 
 const Hero = () => {
   return (
@@ -17,8 +17,8 @@ const Hero = () => {
                 Online Bookkeeping Services for Small Businesses
               </h1>
               <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl">
-                Accurate, CPA-ready financials from certified QuickBooks and Xero experts. 
-                Flat pricing. No contracts.
+                 Accurate, CPA-ready financials from certified QuickBooks and Xero experts. 
+                 Flat pricing. No contracts.
               </p>
             </div>
 

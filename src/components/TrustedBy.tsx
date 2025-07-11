@@ -11,8 +11,8 @@ const TrustedBy = () => {
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-8">
-          <h3 className="text-lg font-semibold text-muted-foreground">
-            Trusted by Leading Platforms
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            We work with the platforms you trust, making bookkeeping easy and efficient.
           </h3>
           
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">

@@ -86,16 +86,16 @@ const FAQ = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:1-800-583-0148" 
+              href="tel:1-800-555-0148" 
               className="text-primary hover:text-primary-dark font-medium transition-colors"
             >
-              📞 Call us at 1-800-583-0148
+              📞 Call us at 1-800-555-0148
             </a>
             <a 
-              href="mailto:contact@topnotchaccounting.com" 
+              href="mailto:info@topnotchaccounting.com" 
               className="text-primary hover:text-primary-dark font-medium transition-colors"
             >
-              ✉️ Email contact@topnotchaccounting.com
+              ✉️ Email info@topnotchaccounting.com
             </a>
           </div>
         </div>
