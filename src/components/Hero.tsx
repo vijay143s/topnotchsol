@@ -55,15 +55,15 @@ const Hero = () => {
           <div className="relative animate-slide-up">
             <div className="relative">
               <img
-                src={heroImage}
+                src="https://www.remotebooksonline.com/images/nlp/home-new-banner.webp"
                 alt="Professional accountant working on financial documents"
                 className="w-full h-auto rounded-xl shadow-hero"
               />
-              {/* Floating Stats Card */}
+              {/* Floating Trust Badge */}
               <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm rounded-lg p-6 shadow-card animate-scale-in">
                 <div className="space-y-2">
-                  <div className="text-2xl font-bold text-primary">$150</div>
-                  <div className="text-sm text-muted-foreground">Starting monthly</div>
+                  <div className="text-lg font-bold text-primary">✓ Free Trial</div>
+                  <div className="text-sm text-muted-foreground">30 days risk-free</div>
                   <div className="text-xs text-trust font-medium">✓ No contracts</div>
                 </div>
               </div>

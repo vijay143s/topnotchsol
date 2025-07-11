@@ -1,10 +1,30 @@
 const TrustedBy = () => {
   const platforms = [
-    { name: "QuickBooks", logo: "📊" },
-    { name: "Xero", logo: "📈" },
-    { name: "FreshBooks", logo: "📋" },
-    { name: "Wave", logo: "🌊" },
-    { name: "Zoho", logo: "📁" }
+    {
+      name: "QuickBooks",
+      logo: "https://www.remotebooksonline.com/images/nlp/quickbooks-logo.webp",
+      description: "Certified ProAdvisor"
+    },
+    {
+      name: "Xero",
+      logo: "https://www.remotebooksonline.com/images/nlp/xero-logo.webp", 
+      description: "Xero Partner"
+    },
+    {
+      name: "Wave",
+      logo: "https://www.remotebooksonline.com/images/nlp/wave.webp",
+      description: "Wave Certified"
+    },
+    {
+      name: "FreshBooks", 
+      logo: "https://www.remotebooksonline.com/images/nlp/freshbooks.webp",
+      description: "FreshBooks Partner"
+    },
+    {
+      name: "NetSuite",
+      logo: "https://www.remotebooksonline.com/images/nlp/NetSuite.webp", 
+      description: "NetSuite Certified"
+    }
   ];
 
   return (
@@ -15,15 +35,23 @@ const TrustedBy = () => {
             We work with the platforms you trust, making bookkeeping easy and efficient.
           </h3>
           
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
             {platforms.map((platform, index) => (
               <div 
                 key={index}
-                className="flex items-center space-x-3 text-muted-foreground hover:text-foreground transition-colors animate-fade-in"
+                className="group text-center animate-fade-in hover:scale-105 transition-transform duration-300"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <span className="text-2xl">{platform.logo}</span>
-                <span className="font-medium text-lg">{platform.name}</span>
+                <div className="relative w-32 h-16 mx-auto mb-2 flex items-center justify-center">
+                  <img
+                    src={platform.logo}
+                    alt={`${platform.name} logo`}
+                    className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+                <p className="text-xs text-muted-foreground group-hover:text-primary transition-colors">
+                  {platform.description}
+                </p>
               </div>
             ))}
           </div>
