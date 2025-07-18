@@ -22,7 +22,6 @@ const Index = () => {
         <FreeTrial />
         <Testimonials />
         <ComparisonTable />
-        <Services />
         <FAQ />
       </main>
       <Footer />

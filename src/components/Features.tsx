@@ -1,78 +1,62 @@
-import { CheckCircle, Users, Shield, Calendar, DollarSign, Clock } from "lucide-react";
+
+const features = [
+  {
+    img: "https://www.remotebooksonline.com/images/nlp/catch-up-kb-4.webp",
+    alt: "Dedicated bookkeeper assigned to your business",
+    title: "Dedicated bookkeeper assigned to your business"
+  },
+  {
+    img: "https://www.remotebooksonline.com/images/nlp/sap-kb-4.webp",
+    alt: "QuickBooks or Xero software included",
+    title: "QuickBooks or Xero software included"
+  },
+  {
+    img: "https://www.remotebooksonline.com/images/nlp/reconciliation.webp",
+    alt: "Monthly bank reconciliations and categorized reports",
+    title: "Monthly bank reconciliations and categorized reports"
+  },
+  {
+    img: "https://www.remotebooksonline.com/images/nlp/cpa-key-benefits-3.webp",
+    alt: "Secure uploads with bank-level encryption",
+    title: "Secure uploads with bank-level encryption"
+  },
+  {
+    img: "https://www.remotebooksonline.com/images/nlp/sap-kb-1.webp",
+    alt: "Flat-rate pricing starting at just $150/month",
+    title: "Flat-rate pricing starting at just $150/month"
+  },
+  {
+    img: "https://www.remotebooksonline.com/images/nlp/sap-kb-2.webp",
+    alt: "Try it free for 30 days — no credit card, no contract",
+    title: "Try it free for 30 days — no credit card, no contract"
+  }
+];
 
 const Features = () => {
-  const features = [
-    {
-      icon: Users,
-      title: "Dedicated bookkeeper assigned to your business",
-      description: "Your personal expert who knows your business inside and out"
-    },
-    {
-      icon: CheckCircle,
-      title: "QuickBooks or Xero software included",
-      description: "Full access to professional accounting software at no extra cost"
-    },
-    {
-      icon: Calendar,
-      title: "Monthly bank reconciliations and categorized reports",
-      description: "Complete financial clarity delivered every month"
-    },
-    {
-      icon: Shield,
-      title: "Secure uploads with bank-level encryption",
-      description: "Your financial data is protected with enterprise-grade security"
-    },
-    {
-      icon: DollarSign,
-      title: "Flat-rate pricing starting at just $150/month",
-      description: "Transparent pricing with no hidden fees or surprises"
-    },
-    {
-      icon: Clock,
-      title: "Try it free for 30 days — no commitment",
-      description: "Full month of service at no cost, no credit card required"
-    }
-  ];
-
   return (
-    <section className="py-20 gradient-section">
+    <section className="py-20 bg-[#f7f7f9]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Why Choose TopNotch Accounting
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional bookkeeping services designed specifically for small business success
-          </p>
-        </div>
-
+        <h2 className="text-center text-3xl md:text-2xl font-bold mb-16 text-[#2346a0]">Why Choose TopNotch Solutions</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => {
-            const IconComponent = feature.icon;
-            return (
-              <div
-                key={index}
-                className="group bg-card rounded-xl p-6 shadow-card hover:shadow-lg transition-all duration-300 animate-fade-in border border-border/50"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <IconComponent className="w-6 h-6 text-primary" />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-card-foreground leading-tight">
-                      {feature.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
+          {features.map((feature, idx) => (
+            <div key={idx} className="bg-white rounded-2xl shadow-lg p-6 flex items-center mb-6 animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
+              <div className="flex-shrink-0 mr-4">
+                <img
+                  src={feature.img}
+                  alt={feature.alt}
+                  loading="lazy"
+                  width={60}
+                  height={60}
+                  className="rounded-lg object-contain"
+                />
               </div>
-            );
-          })}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 leading-tight mb-0">
+                  {feature.title}
+                </h3>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

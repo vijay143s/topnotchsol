@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import ConsultForm from "@/components/ConsultForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Phone, Shield, Clock, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -34,6 +36,7 @@ const ServicePageLayout = ({
   benefits,
   faq
 }: ServicePageLayoutProps) => {
+  const [showConsult, setShowConsult] = useState(false);
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -50,14 +53,29 @@ const ServicePageLayout = ({
               {description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="lg">
-                Get Free Review
+              <Button variant="cta" size="lg" onClick={() => setShowConsult(true)}>
+                Get a Free Quote for Bookkeeping
               </Button>
               <Button variant="outline" size="lg">
                 <Phone className="w-4 h-4 mr-2" />
-                Call 1-800-555-0148
+                Call +91 9666736088
               </Button>
             </div>
+      {/* ConsultForm Modal */}
+      {showConsult && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl font-bold"
+              onClick={() => setShowConsult(false)}
+              aria-label="Close"
+            >
+              &times;
+            </button>
+            <ConsultForm onSuccess={() => setShowConsult(false)} />
+          </div>
+        </div>
+      )}
           </div>
         </div>
       </section>
@@ -183,17 +201,32 @@ const ServicePageLayout = ({
               Ready to Get Started?
             </h2>
             <p className="text-lg text-muted-foreground">
-              Join thousands of businesses who trust TopNotch Accounting with their bookkeeping.
+              Join thousands of businesses who trust TopNotch Solutions with their bookkeeping.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="lg">
-                Get Free Review
+              <Button variant="cta" size="lg" onClick={() => setShowConsult(true)}>
+                Get a Free Quote for Bookkeeping
               </Button>
               <Button variant="outline" size="lg">
                 <Phone className="w-4 h-4 mr-2" />
-                Call 1-800-555-0148
+                Call +91 9666736088
               </Button>
             </div>
+            {/* ConsultForm Modal */}
+            {showConsult && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
+                  <button
+                    className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                    onClick={() => setShowConsult(false)}
+                    aria-label="Close"
+                  >
+                    &times;
+                  </button>
+                  <ConsultForm onSuccess={() => setShowConsult(false)} />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>

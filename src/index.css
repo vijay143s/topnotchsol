@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TopNotch Accounting Design System */
+/* TopNotch Solutions Design System */
 
 @layer base {
   :root {
     /* Base colors */
-    --background: 0 0% 100%;
+    --background: 0 0% 96%; /* #f4f4f4 */
     --foreground: 215 20% 15%;
 
     /* Card colors */
@@ -18,11 +18,19 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 20% 15%;
 
-    /* Primary brand colors - Professional blue */
-    --primary: 217 91% 35%;
+    /* Primary brand colors - Brand Red */
+    --primary: 358 81% 51%; /* #e71a21 */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 217 91% 60%;
-    --primary-dark: 217 91% 25%;
+    --primary-light: 358 81% 70%; /* lighter red */
+    --primary-dark: 358 81% 35%; /* darker red */
+
+    /* Accent and Button colors - Softer Red */
+    --accent: 358 81% 61%; /* Softer, lighter red */
+    --accent-foreground: 0 0% 100%;
+
+    /* Button colors */
+    --button: 358 81% 61%; /* Softer red for buttons */
+    --button-foreground: 0 0% 100%;
 
     /* Secondary colors */
     --secondary: 210 40% 96%;

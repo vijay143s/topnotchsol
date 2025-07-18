@@ -6,8 +6,23 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Pricing from "./pages/Pricing";
+// Compare Pages
+import TopNotchSolutionsVsBench from "./pages/compare/topnotchsolutions-vs-bench";
+import TopNotchSolutionsVsXero from "./pages/compare/topnotchsolutions-vs-xero";
+import TopNotchSolutionsVsQuickbooksLive from "./pages/compare/topnotchsolutions-vs-quickbooks-live";
+import TopNotchSolutionsVsWave from "./pages/compare/topnotchsolutions-vs-wave";
+import TopNotchSolutionsVsPilot from "./pages/compare/topnotchsolutions-vs-pilot";
+import TopNotchSolutionsVs1800Accountant from "./pages/compare/topnotchsolutions-vs-1-800accountant";
+import TopNotchSolutionsVsMerritt from "./pages/compare/topnotchsolutions-vs-merritt-bookkeeping";
+import TopNotchSolutionsVsBookkeeper360 from "./pages/compare/topnotchsolutions-vs-bookkeeper360";
+import TopNotchSolutionsVsIndinero from "./pages/compare/topnotchsolutions-vs-indinero";
+import TopNotchSolutionsVsBotkeeper from "./pages/compare/topnotchsolutions-vs-botkeeper";
+import TopNotchSolutionsVsBark from "./pages/compare/topnotchsolutions-vs-bark";
+import TopNotchSolutionsVsParo from "./pages/compare/topnotchsolutions-vs-paro";
+import NetSuiteVsQuickBooks from "./pages/compare/netsuite-vs-quickbooks";
 
 // Service Pages
+
 import BookkeepingServices from "./pages/services/BookkeepingServices";
 import MonthlyBookkeeping from "./pages/services/MonthlyBookkeeping";
 import CatchUpBookkeeping from "./pages/services/CatchUpBookkeeping";
@@ -27,6 +42,8 @@ import NonprofitsBookkeeping from "./pages/services/NonprofitsBookkeeping";
 import FranchiseBookkeeping from "./pages/services/FranchiseBookkeeping";
 import ConstructionBookkeeping from "./pages/services/ConstructionBookkeeping";
 import RestaurantsBookkeeping from "./pages/services/RestaurantsBookkeeping";
+import NetsuiteFAQ from "./pages/compare/netsuitefaq";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -39,7 +56,25 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/about" element={<Contact />} />
+          <Route path= '/netsuitefaq' element={<NetsuiteFAQ />} />
+          {/* Compare  */}
+          <Route path="/compare/topnotchsolutions-vs-bench" element={<TopNotchSolutionsVsBench />} />
+          <Route path="/compare/topnotchsolutions-vs-xero" element={<TopNotchSolutionsVsXero />} />
+          <Route path="/compare/topnotchsolutions-vs-quickbooks-live" element={<TopNotchSolutionsVsQuickbooksLive />} />
+          <Route path="/compare/topnotchsolutions-vs-wave" element={<TopNotchSolutionsVsWave />} />
+          <Route path="/compare/topnotchsolutions-vs-pilot" element={<TopNotchSolutionsVsPilot />} />
+          <Route path="/compare/topnotchsolutions-vs-1-800accountant" element={<TopNotchSolutionsVs1800Accountant />} />
+          <Route path="/compare/topnotchsolutions-vs-merritt-bookkeeping" element={<TopNotchSolutionsVsMerritt />} />
+          <Route path="/compare/topnotchsolutions-vs-bookkeeper360" element={<TopNotchSolutionsVsBookkeeper360 />} />
+          <Route path="/compare/topnotchsolutions-vs-indinero" element={<TopNotchSolutionsVsIndinero />} />
+          <Route path="/compare/topnotchsolutions-vs-botkeeper" element={<TopNotchSolutionsVsBotkeeper />} />
+          <Route path="/compare/topnotchsolutions-vs-bark" element={<TopNotchSolutionsVsBark />} />
+          <Route path="/compare/topnotchsolutions-vs-paro" element={<TopNotchSolutionsVsParo />} />
+          <Route path="/compare/netsuite-vs-quickbooks" element={<NetSuiteVsQuickBooks />} />
           
+          {/* Core Services */} 
+
           {/* Core Bookkeeping Services */}
           <Route path="/services/bookkeeping-services" element={<BookkeepingServices />} />
           <Route path="/services/monthly-bookkeeping" element={<MonthlyBookkeeping />} />

@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import ConsultForm from "@/components/ConsultForm";
+
 
 const FreeTrial = () => {
   const benefits = [
@@ -9,7 +12,7 @@ const FreeTrial = () => {
     "Full access to your dedicated bookkeeper",
     "Complete financial reports included"
   ];
-
+  const [showConsult, setShowConsult] = useState(false);
   return (
     <section className="py-20 gradient-hero text-white">
       <div className="container mx-auto px-4">
@@ -40,15 +43,29 @@ const FreeTrial = () => {
 
           {/* CTA */}
           <div className="space-y-6">
-            <Button variant="hero" size="xl" className="bg-accent hover:bg-accent/90 group shadow-xl">
-              Get a Quote in 30 Seconds
+            <Button variant="hero" size="xl" className="bg-accent hover:bg-accent/90 group shadow-xl" onClick={() => setShowConsult(true)}>
+              Get a Free Quote for Bookkeeping
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
             <div className="text-sm text-white/70">
               ⭐ Join 5,000+ satisfied small business owners
             </div>
           </div>
+          {/* ConsultForm Modal */}
+          {showConsult && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+              <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
+                <button
+                  className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                  onClick={() => setShowConsult(false)}
+                  aria-label="Close"
+                >
+                  &times;
+                </button>
+                <ConsultForm onSuccess={() => setShowConsult(false)} />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>

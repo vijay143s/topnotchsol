@@ -46,7 +46,7 @@ const TrustedBy = () => {
                   <img
                     src={platform.logo}
                     alt={`${platform.name} logo`}
-                    className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="max-w-full max-h-full object-contain transition-all duration-300"
                   />
                 </div>
                 <p className="text-xs text-muted-foreground group-hover:text-primary transition-colors">
@@ -56,22 +56,6 @@ const TrustedBy = () => {
             ))}
           </div>
 
-          <div className="pt-6 border-t border-border/30">
-            <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-muted-foreground">
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-trust rounded-full"></div>
-                <span>BBB Accredited</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-trust rounded-full"></div>
-                <span>QuickBooks Certified ProAdvisor</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-trust rounded-full"></div>
-                <span>Trusted by 5,000+ Businesses</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
